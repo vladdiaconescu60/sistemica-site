@@ -226,3 +226,5 @@ ol.steps span { color: var(--body); font-size: 16.5px; }
 .grid.two .card { padding: 16px 24px; gap: 5px; }
 .grid.two .card h3 { font-size: 19px; }
 .grid.two .card p { font-size: 15px; line-height: 1.45; }
+/* Phones: product headers share one height (text sits at the bottom), so the sketch starts at the same place on Nexty, COMO 20 and Signature */
+@media (max-width: 760px) { .sketchhead .wrap { min-height: 212px; justify-content: flex-end; } }
