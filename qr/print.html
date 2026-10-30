@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Coduri QR TOSO – foaie de tipărit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=DM+Sans:wght@400;700&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="coduri.js"></script>
+<style>
+/* Internal tool: one card per tracked code (QR + short address + where it goes), A4 print layout, PNG download per code. */
+:root { --paper: #F6F3EE; --ink: #1C1F24; --muted: #6B6F76; --line: #DDD5C8; --accent: #B8392A; color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px 16px 48px; background: var(--paper); color: var(--ink); font-family: 'DM Sans', Arial, sans-serif; }
+h1 { font-family: 'EB Garamond', Georgia, serif; font-weight: 500; font-size: 36px; margin: 0 0 8px; }
+.bar { max-width: 1000px; margin: 0 auto 24px; display: flex; flex-direction: column; gap: 10px; }
+.bar label { font-size: 14px; color: var(--muted); }
+.bar input { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; width: 100%; max-width: 420px; }
+.bar button { font: 700 14px 'DM Sans', Arial, sans-serif; padding: 10px 16px; border-radius: 8px; border: 0; background: var(--ink); color: var(--paper); cursor: pointer; width: max-content; }
+.sheet { max-width: 1000px; margin: 0 auto; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.card { background: #FFFDF9; border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; break-inside: avoid; }
+.card .qr img, .card .qr canvas { width: 180px !important; height: 180px !important; }
+.card .brand { font-family: 'EB Garamond', Georgia, serif; font-size: 20px; }
+.card .url { font-size: 12px; color: var(--muted); word-break: break-all; }
+.card .desc { font-size: 12px; color: var(--accent); font-weight: 700; }
+.card a { font-size: 12px; color: var(--ink); }
+@media print { body { padding: 0; background: #fff; } .bar { display: none; } .card a { display: none; } .sheet { grid-template-columns: repeat(3, 1fr); } }
+</style>
+</head>
+<body>
+<div class="bar">
+  <h1>Coduri QR TOSO</h1>
+  <label for="base">Adresa site-ului (fără / la final), de exemplu https://sistemica.ro</label>
+  <input id="base" value="https://sistemica.ro">
+  <button id="go">Generează codurile</button>
+  <label>Lista codurilor se editează în coduri.csv și se reconstruiește cu build-qr.sh. Tipăriți cu Cmd+P.</label>
+</div>
+<div class="sheet" id="sheet"></div>
+<script>
+(function () {
+  function render() {
+    var base = document.getElementById('base').value.replace(/\/+$/, '');
+    var sheet = document.getElementById('sheet');
+    sheet.innerHTML = '';
+    (window.CODURI || []).forEach(function (c) {
+      var url = base + '/qr/' + c.cod + '/';
+      var card = document.createElement('div'); card.className = 'card';
+      var box = document.createElement('div'); box.className = 'qr';
+      card.innerHTML = '<span class="brand">TOSO · Japonia</span>';
+      card.appendChild(box);
+      card.insertAdjacentHTML('beforeend', '<span class="url"></span><span class="desc"></span><a href="#" download="qr-' + c.cod + '.png">Descarcă PNG</a>');
+      card.querySelector('.url').textContent = url.replace(/^https?:\/\//, '');
+      card.querySelector('.desc').textContent = c.descriere;
+      sheet.appendChild(card);
+      new QRCode(box, { text: url, width: 600, height: 600, colorDark: '#1C1F24', colorLight: '#FFFFFF', correctLevel: QRCode.CorrectLevel.H });
+      setTimeout(function () {
+        var canvas = box.querySelector('canvas');
+        if (canvas) card.querySelector('a').href = canvas.toDataURL('image/png');
+      }, 50);
+    });
+  }
+  document.getElementById('go').onclick = render;
+  render();
+})();
+</script>
+</body>
+</html>
