@@ -33,7 +33,7 @@ img { display: block; max-width: 100%; }
 /* Header */
 .top { position: sticky; top: 0; z-index: 10; background: rgba(217,206,191,.97); backdrop-filter: blur(8px); border-bottom: 1px solid #C9BCA9; color: var(--ink); }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
-.top .wrap { padding-bottom: 28px; }
+.top .wrap { padding-top: 28px; padding-bottom: 48px; }
 .brand { text-decoration: none; color: var(--ink); display: flex; flex-direction: column; line-height: 1.1; }
 .brand b { font-family: var(--display); font-size: 26px; font-weight: 500; }
 .brand span { font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: #6E655B; }
