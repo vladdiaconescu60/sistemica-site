@@ -323,7 +323,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 @media (max-width: 760px) { .foot-main { grid-template-columns: 1fr; gap: 20px; } .brand small { white-space: normal; max-width: 200px; } }
 
 /* --- logo SISTEMICA MOTION, as in the B2B header --- */
-.top .brand { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 17px; letter-spacing: .3em; line-height: 1.5; color: var(--ink); }
+.top .brand { font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 16px; letter-spacing: .42em; line-height: 1.5; color: var(--ink); }
 .top .brand b { font: inherit; letter-spacing: inherit; color: inherit; }
-.top .brand > span { font-size: 8px; letter-spacing: .4em; text-transform: none; color: inherit; text-align: right; display: flex; align-items: center; justify-content: flex-end; gap: 8px; font-style: italic; }
+.top .brand > span { font-size: 8px; letter-spacing: .42em; text-transform: none; color: inherit; text-align: right; display: flex; align-items: center; justify-content: flex-end; gap: 7px; font-style: normal; }
 .top .brand i { margin-left: 0; }
