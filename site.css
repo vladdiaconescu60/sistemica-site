@@ -353,3 +353,6 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 
 /* --- Nexty card thumbnail: same width as the other two cards, black sides --- */
 .compact .grid .card img.thumb-wide { width: 194px; height: 120px; object-fit: cover; background: #272727; }
+
+/* --- every block between header and footer: 100px top and bottom --- */
+body > section:not(.site-foot) { padding-top: 100px !important; padding-bottom: 100px !important; }
