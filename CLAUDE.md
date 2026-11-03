@@ -13,3 +13,5 @@ Descrierea „distribuitor exclusiv TOSO Japonia în România” stă pe un sing
 ## Footer
 
 Datele firmei folosesc același font și aceeași dimensiune pentru etichete și valori. Între etichetă și valoare trebuie să existe spațiu.
+
+Anul din copyright este generat din JavaScript (`.foot-year`), cu anul curent al vizitatorului. Valoarea 2026 din HTML este doar rezervă, dacă JavaScript este dezactivat.
