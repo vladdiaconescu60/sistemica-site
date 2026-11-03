@@ -327,7 +327,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 .top .brand { font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 16px; letter-spacing: .42em; line-height: 1.5; color: var(--ink); position: relative; }
 .top .brand small { position: absolute; left: 0; top: 100%; margin-top: 2px; white-space: nowrap; max-width: none; }
 .top .brand b { font: inherit; letter-spacing: inherit; color: inherit; }
-.top .brand > span { font-size: 8px; letter-spacing: .42em; text-transform: none; color: inherit; display: flex; align-items: center; justify-content: flex-end; gap: 7px; font-style: normal; width: max-content; align-self: flex-end; margin-right: 0; }
+.top .brand > span { font-size: 8px; letter-spacing: .42em; text-transform: none; color: inherit; display: flex; align-items: center; justify-content: flex-end; gap: 7px; font-style: italic; width: max-content; align-self: flex-end; margin-right: 0; }
 .top .brand i { margin-left: 0; }
 
 /* --- desktop logo size: SISTEMICA matches the description line width --- */
@@ -339,6 +339,6 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 /* --- footer logo, white, 30% smaller than the desktop header logo --- */
 .site-foot .foot-logo { display: inline-flex; flex-direction: column; width: max-content; position: relative; margin-top: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 17.5px; letter-spacing: .42em; line-height: 1.5; color: #F3EFE8; }
 .site-foot .foot-logo b { font: inherit; letter-spacing: inherit; color: inherit; }
-.site-foot .foot-logo > span { font-size: 8.75px; letter-spacing: .42em; text-transform: none; color: inherit; display: flex; align-items: center; justify-content: flex-end; gap: 7px; font-style: normal; width: max-content; align-self: flex-end; margin-right: 0; }
+.site-foot .foot-logo > span { font-size: 8.75px; letter-spacing: .42em; text-transform: none; color: inherit; display: flex; align-items: center; justify-content: flex-end; gap: 7px; font-style: italic; width: max-content; align-self: flex-end; margin-right: 0; }
 .site-foot .foot-logo i { display: inline-block; width: 4px; height: 4px; background: #b1202b; border-radius: 50%; }
 .site-foot .foot-logo:hover { color: #F3EFE8; text-decoration: none; }
