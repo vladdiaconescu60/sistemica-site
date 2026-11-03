@@ -57,7 +57,7 @@ img { display: block; max-width: 100%; }
 .pagehead .lead { font-family: var(--display); font-style: italic; font-size: clamp(20px, 2.6vw, 30px); color: var(--greige); max-width: 820px; }
 
 /* Sections */
-.sec { padding: 80px 0; }
+.sec { padding: 100px 0; }
 .sec.alt { background: var(--sand); }
 .sec.dark { background: var(--greige); color: #F6F3EE; }
 .sec.graphite { background: var(--graphite); color: #F3EFE8; }
@@ -126,7 +126,7 @@ ol.steps span { color: var(--body); font-size: 16.5px; }
 
 @media (max-width: 640px) {
   body { font-size: 17px; }
-  .sec { padding: 80px 0; }
+  .sec { padding: 100px 0; }
   .pagehead { padding: 48px 0 28px; }
   .nav { font-size: 14px; gap: 2px 14px; }
   .specs th { width: 45%; }
@@ -198,7 +198,7 @@ ol.steps span { color: var(--body); font-size: 16.5px; }
 .homehero { padding: 44px 0 0; }
 .homehero .wrap { gap: 30px; }
 .homehero h1 { padding-bottom: 28px; border-bottom: 1px solid var(--line); }
-.homehero + .sec { padding-top: 80px; }
+.homehero + .sec { padding-top: 100px; }
 .homehero h1 { font-size: clamp(32px, 4.2vw, 54px); }
 .thumb.dark { background: var(--graphite); }
 .card.dark .facts li b { color: #F3EFE8; }
@@ -244,7 +244,7 @@ body { color: var(--grey-text); }
 .sketchhead h1, .card .name { color: var(--ink); }
 
 /* Pagini compacte (Nexty): secțiuni mai scurte, poze mai mici și egale, text mai fin */
-.compact .sec { padding: 80px 0; }
+.compact .sec { padding: 100px 0; }
 .compact .sec.sketchsec { padding-top: 40px; } /* schița rămâne aliniată cu COMO 20 */
 .compact .sec .wrap > h2 { font-size: clamp(28px, 3.4vw, 40px); margin: 8px 0 22px; }
 .compact .split { gap: 32px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
@@ -279,7 +279,7 @@ body { color: var(--grey-text); }
 .compact .specs th { width: 24%; }
 @media (max-width: 760px) { .compact .split:has(> .specs) { grid-template-columns: 1fr; } }
 /* Schițe: mai puțin spațiu gol deasupra și dedesubt (desenul rămâne neschimbat; aceleași valori pe Nexty, COMO 20, Signature, Smart Wave) */
-.sketchhead { padding-top: 80px; padding-bottom: 36px; }
+.sketchhead { padding-top: 100px; padding-bottom: 36px; }
 .sec.sketchsec { padding-top: 28px; padding-bottom: 28px; }
 .compact .sec.sketchsec { padding-top: 28px; }
 /* COMO 20: caseta Motoare mai compactă */
