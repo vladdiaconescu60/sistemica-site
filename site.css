@@ -352,4 +352,4 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 .site-foot .foot-brand { display: flex; flex-direction: column; align-items: flex-start; }
 
 /* --- Nexty card thumbnail: same width as the other two cards, black sides --- */
-.compact .grid .card img.thumb-wide { width: 194px; height: 120px; object-fit: contain; background: #262626; }
+.compact .grid .card img.thumb-wide { width: 194px; height: 120px; object-fit: cover; background: #272727; }
