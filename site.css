@@ -329,3 +329,9 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 .top .brand b { font: inherit; letter-spacing: inherit; color: inherit; }
 .top .brand > span { font-size: 8px; letter-spacing: .42em; text-transform: none; color: inherit; display: flex; align-items: center; justify-content: flex-end; gap: 7px; font-style: normal; width: max-content; align-self: flex-end; margin-right: 0; }
 .top .brand i { margin-left: 0; }
+
+/* --- desktop logo size: SISTEMICA matches the description line width --- */
+@media (min-width: 761px) {
+.top .brand { font-size: 25px; }
+.top .brand > span { font-size: 12.5px; }
+}
