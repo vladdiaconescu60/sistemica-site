@@ -14,7 +14,7 @@
   --accent: #7F5B53; /* cafeniu închis; înainte piersică #C99F8D, cărămiziu #7F5B53 */
   --accent-soft: #C99F8D; /* pe fond închis: auriul Signature */
   --champagne: #C99F8D;
-  --tan: #867D6A; /* cafeniu Signature, mai închis pentru ivoire */
+  --tan: #7F5B53; /* cafeniu Signature, mai închis pentru ivoire */
   --display: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --text: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
   color-scheme: light;
@@ -140,7 +140,7 @@ ol.steps span { color: var(--body); font-size: 16.5px; }
 .names li { font-family: var(--display); font-size: clamp(24px, 2.6vw, 30px); font-weight: 500; line-height: 1.15; color: var(--ink); }
 
 /* Technical sketch header: inline SVG line drawing on graphite; labels move under the drawing on phones */
-.sketchhead { background: #D8CFBE; color: var(--ink); padding: 64px 0 40px; }
+.sketchhead { background: #EAE6DB; color: var(--ink); padding: 64px 0 40px; }
 .sketchhead .wrap { display: flex; flex-direction: column; gap: 14px; }
 .sketchhead .eyebrow { color: #7F5B53; } /* cafeniu mai închis pe banda bej */
 .sketchhead h1 { font-family: var(--display); font-weight: 500; font-size: clamp(40px, 6vw, 72px); line-height: 1.04; }
