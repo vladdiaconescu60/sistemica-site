@@ -27,7 +27,7 @@ a { color: inherit; }
 img { display: block; max-width: 100%; }
 
 .wrap { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--tan); }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: #B1202B; }
 .display { font-family: var(--display); font-weight: 500; line-height: 1.08; }
 
 /* Header */
@@ -142,7 +142,7 @@ ol.steps span { color: var(--body); font-size: 16.5px; }
 /* Technical sketch header: inline SVG line drawing on graphite; labels move under the drawing on phones */
 .sketchhead { background: #D9CEBF; color: var(--ink); padding: 64px 0 40px; }
 .sketchhead .wrap { display: flex; flex-direction: column; gap: 14px; }
-.sketchhead .eyebrow { color: #7E6540; } /* cafeniu mai închis pe banda bej */
+.sketchhead .eyebrow { color: #B1202B; } /* cafeniu mai închis pe banda bej */
 .sketchhead h1 { font-family: var(--display); font-weight: 500; font-size: clamp(40px, 6vw, 72px); line-height: 1.04; }
 .sketchhead .lead { font-size: 19px; color: #4F4842; max-width: 760px; }
 .sketch { display: block; width: 100%; height: auto; margin-top: 8px; }
