@@ -301,19 +301,19 @@ body { color: var(--grey-text); }
 body { display: flex; flex-direction: column; min-height: 100vh; }
 .brand small { font-size: 10px; letter-spacing: .02em; text-transform: none; color: #6E655B; line-height: 1.35; margin-top: 4px; white-space: nowrap; }
 .brand i { display: inline-block; width: 4px; height: 4px; margin-left: 4px; background: #b1202b; border-radius: 50%; vertical-align: middle; }
-.site-foot { margin-top: auto; background: var(--graphite); color: #C9C4BB; padding: 26px 0 22px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.site-foot { margin-top: auto; background: #D9CEBF; color: #1C1F24; padding: 26px 0 22px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
 .foot-main { display: grid; grid-template-columns: 1.3fr 1fr .8fr; gap: 32px; align-items: start; }
-.foot-copy { font-size: 12px; color: #C9C4BB; margin: 0; }
-.foot-title { font: 10px/1.5 Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #C9C4BB; margin: 0 0 8px; }
+.foot-copy { font-size: 12px; color: #1C1F24; margin: 0; }
+.foot-title { font: 10px/1.5 Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #1C1F24; margin: 0 0 8px; }
 .foot-company { margin-top: 0; }
 .foot-company dl { display: grid; gap: 4px; margin: 0; }
-.foot-company dt { font-size: 10px; color: #C9C4BB; display: inline; }
+.foot-company dt { font-size: 10px; color: #1C1F24; display: inline; }
 .foot-company dl > div { display: block; }
-.foot-company dd { margin: 0; display: inline; font-size: 12px; color: #C9C4BB; overflow-wrap: anywhere; }
+.foot-company dd { margin: 0; display: inline; font-size: 12px; color: #1C1F24; overflow-wrap: anywhere; }
 .foot-contact { margin-top: 0; }
-.foot-contact address { font-style: normal; display: flex; flex-direction: column; gap: 9px; font-size: 12px; color: #C9C4BB; }
-.foot-legal { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(201, 196, 187, .25); font-size: 10px; color: #C9C4BB; letter-spacing: .08em; }
-.site-foot a { color: #F3EFE8; }
+.foot-contact address { font-style: normal; display: flex; flex-direction: column; gap: 9px; font-size: 12px; color: #1C1F24; }
+.foot-legal { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(28, 31, 36, .18); font-size: 10px; color: #1C1F24; letter-spacing: .08em; }
+.site-foot a { color: #4F4842; }
 .site-foot a:hover, .legal-page a:hover { text-decoration: underline; }
 .legal-page { padding-top: 70px; padding-bottom: 70px; max-width: 820px; flex: 1; }
 .legal-page h1 { font-family: var(--display, Georgia, serif); font-size: clamp(36px, 4vw, 52px); font-weight: 500; margin: 0 0 10px; }
@@ -337,16 +337,16 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 }
 
 /* --- footer logo, white, 30% smaller than the desktop header logo --- */
-.site-foot .foot-logo { display: inline-flex; flex-direction: column; width: max-content; position: relative; margin-top: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 17.5px; letter-spacing: .42em; line-height: 1.5; color: #F3EFE8; text-decoration: none; }
+.site-foot .foot-logo { display: inline-flex; flex-direction: column; width: max-content; position: relative; margin-top: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 17.5px; letter-spacing: .42em; line-height: 1.5; color: #1C1F24; text-decoration: none; }
 .site-foot .foot-logo b { font: inherit; font-weight: 400; letter-spacing: inherit; color: inherit; text-decoration: none; }
 .site-foot .foot-logo > span { font-size: 8.75px; letter-spacing: .42em; text-transform: none; color: inherit; display: flex; align-items: center; justify-content: flex-end; gap: 7px; font-style: italic; width: max-content; align-self: flex-end; margin-right: 0; }
 .site-foot .foot-logo i { display: inline-block; width: 4px; height: 4px; background: #b1202b; border-radius: 50%; }
 .site-foot .foot-logo, .site-foot .foot-logo:hover, .site-foot .foot-logo b, .site-foot .foot-logo > span { text-decoration: none; font-weight: 400; }
-.site-foot .foot-logo:hover { color: #F3EFE8; }
+.site-foot .foot-logo:hover { color: #1C1F24; }
 
 /* --- footer company data: one font, one size, spacing between label and value --- */
 .site-foot .foot-company dl > div { display: block; margin: 0; }
-.site-foot .foot-company dt, .site-foot .foot-company dd { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.6; color: #C9C4BB; margin: 0; display: inline; }
+.site-foot .foot-company dt, .site-foot .foot-company dd { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.6; color: #1C1F24; margin: 0; display: inline; }
 .site-foot .foot-company dt { margin-right: 8px; }
 
 .site-foot .foot-brand { display: flex; flex-direction: column; align-items: flex-start; }
