@@ -362,11 +362,24 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 /* --- every block between header and footer: 100px top and bottom --- */
 body > section:not(.site-foot) { padding-top: 100px !important; padding-bottom: 100px !important; }
 
-/* Pagina principală după materiale/sistemica-01-acasa.pdf (2026-11-16): culori și spațiere doar pe homepage */
-.home .eyebrow { color: #A2462F; }
-.home .homehero h1, .home .sec .wrap > h2 { color: #2A2522; }
-.home .card .more { color: #A2462F; }
-.home .card h3, .home .rule-cols h3 { color: #3A342F; }
-.home .rule-cols > div { border-top: 2px solid #9C7F52; }
+/* Pagini aliniate cu PDF-urile din materiale/ (01-acasa, 02-nexty): culori doar pe paginile cu clasa pdfpal */
+.pdfpal .eyebrow { color: #A2462F; }
+.pdfpal .homehero h1, .pdfpal .sec .wrap > h2 { color: #2A2522; }
+.pdfpal .card .more { color: #A2462F; }
+.pdfpal .card h3, .pdfpal .rule-cols h3 { color: #3A342F; }
+.pdfpal .rule-cols > div { border-top-color: #9C7F52; }
+.home .rule-cols > div { border-top-width: 2px; }
 body.home > section.homehero { padding-bottom: 0 !important; }
 body.home > section.homehero + .sec { padding-top: 64px !important; }
+/* Secțiunea „în cifre” pe fond maro închis (02-nexty) */
+.sec.cifre { background: #4B3C30; color: #E6E1D3; }
+body .sec.cifre .eyebrow { color: #D9957A; }
+body .sec.cifre .wrap > h2 { color: #F3EDE3; }
+.statcols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 44px; }
+.statcols > div { border-top: 1px solid #D9957A; display: flex; flex-direction: column; }
+.statcols b { font-family: var(--display); font-weight: 500; font-size: clamp(56px, 6vw, 84px); line-height: 1.31; color: #F1EBDD; }
+.statcols b small { font-size: .38em; color: #D9957A; margin-left: 4px; }
+.statcols span { font-size: 16.5px; color: #E6E1D3; margin-top: -9px; }
+@media (max-width: 640px) { .statcols { grid-template-columns: 1fr; } }
+.pdfpal.compact .figure img { max-width: 272px; aspect-ratio: 16 / 10; }
+body.pdfpal > section.pad56 { padding-top: 56px !important; padding-bottom: 56px !important; } /* ca în 02-nexty.pdf */
