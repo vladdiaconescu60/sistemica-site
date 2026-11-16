@@ -383,3 +383,8 @@ body .sec.cifre .wrap > h2 { color: #F3EDE3; }
 @media (max-width: 640px) { .statcols { grid-template-columns: 1fr; } }
 .pdfpal.compact .figure img { max-width: 272px; aspect-ratio: 16 / 10; }
 body.pdfpal > section.pad56 { padding-top: 56px !important; padding-bottom: 56px !important; } /* ca în 02-nexty.pdf */
+.statcols.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { .statcols.four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .statcols.four { grid-template-columns: 1fr; } }
+div.dl:hover { border-color: var(--line); } /* document fără fișier încă: nu e link */
+body .sec.cifre .wrap > h2 { font-size: clamp(28px, 3.4vw, 40px); margin: 8px 0 22px; }
