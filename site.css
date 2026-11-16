@@ -364,7 +364,7 @@ body > section:not(.site-foot) { padding-top: 100px !important; padding-bottom: 
 
 /* Pagini aliniate cu PDF-urile din materiale/ (01-acasa, 02-nexty): culori doar pe paginile cu clasa pdfpal */
 .pdfpal .eyebrow { color: #A2462F; }
-.pdfpal .homehero h1, .pdfpal .sec .wrap > h2 { color: #2A2522; }
+.pdfpal .homehero h1, .pdfpal .pagehead h1, .pdfpal .sec .wrap > h2 { color: #2A2522; }
 .pdfpal .card .more { color: #A2462F; }
 .pdfpal .card h3, .pdfpal .rule-cols h3 { color: #3A342F; }
 .pdfpal .rule-cols > div { border-top-color: #9C7F52; }
