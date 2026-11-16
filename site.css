@@ -234,7 +234,7 @@ ol.steps span { color: var(--body); font-size: 16.5px; }
    Numele produselor rămân închise: titlul paginilor de produs și cardurile gamei. */
 :root { --grey-title: #A39C93; --grey-text: #776F66; --body: #776F66; --muted: #8A8279; }
 body { color: var(--grey-text); }
-.sec .wrap > h2, .pagehead h1, .homehero h1 { color: var(--grey-title); }
+.sec .wrap > h2, .pagehead h1, .homehero h1 { color: #4F4842; }
 .pagehead .lead { color: var(--grey-text); }
 .sketchhead .lead { color: #6E665D; } /* pe banda bej, puțin mai închis ca să se citească */
 .card h3, .rule-cols h3, .specs th, .dl b, ol.steps b, .facts li b, .names li, .cta.ghost { color: var(--grey-text); }
