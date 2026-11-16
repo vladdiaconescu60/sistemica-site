@@ -240,6 +240,11 @@ body { color: var(--grey-text); }
 .card h3, .rule-cols h3, .specs th, .dl b, ol.steps b, .facts li b, .names li, .cta.ghost { color: var(--grey-text); }
 .rule-cols > div { border-top-color: var(--grey-title); }
 .cta.ghost { border-color: var(--grey-text); }
+/* Butoane: culorile de fundal și de text se inversează la hover, cu tranziție discretă */
+.cta { transition: background-color .25s ease, color .25s ease, border-color .25s ease; }
+.cta:hover, .cta:focus-visible { background: #4F4842; color: #D9CEBF; }
+.cta.ghost:hover, .cta.ghost:focus-visible { background: var(--grey-text); color: var(--paper); border-color: var(--grey-text); }
+@media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
 /* nume de produs: închise */
 .sketchhead h1, .card .name { color: var(--ink); }
 
